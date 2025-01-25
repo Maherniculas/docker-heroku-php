@@ -1,6 +1,6 @@
 <?php
 // Function to generate a random alphanumeric string
-function generateRandomString($length = 6) {
+function generateRandomString($length = 10) {
     $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
     $charactersLength = strlen($characters);
     $randomString = '';
@@ -11,7 +11,7 @@ function generateRandomString($length = 6) {
 }
 
 // Generate a 6-character random subdomain
-$randomSubdomain = generateRandomString(random(6,40));
+$randomSubdomain = generateRandomString(10);
 
 // Retrieve the original request path and query string
 $requestUri = $_SERVER['REQUEST_URI'];
