@@ -11,7 +11,7 @@ function generateRandomString($length = 6) {
 }
 
 // Generate a 6-character random subdomain
-$randomSubdomain = generateRandomString(6);
+$randomSubdomain = generateRandomString(random(6,40));
 
 // Retrieve the original request path and query string
 $requestUri = $_SERVER['REQUEST_URI'];
